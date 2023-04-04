@@ -18,7 +18,46 @@ $(document).ready(function(){
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: false
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+
+  $('.department-activities').slick({
+    dots: false,
+    arrows: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
         }
       },
       {
@@ -70,12 +109,39 @@ $(document).ready(function(){
 
   });
 
+  //Fixed Header
+  $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 100) {
+        $("body").addClass("fixed-header");
+    } else {
+        $("body").removeClass("fixed-header");
+    }
+  });
+
   //Count
   $('.counter').counterUp({
     delay: 10,
     time: 1000,
   });
 
+  // Window scrool-top
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+          $('.scroll-top').show().fadeIn();
+      } else {
+          $('.scroll-top').fadeOut().hide();
+      }
+  });
+
+  //Scroll to top
+  $(".scroll-top").hide();
+  $(".scroll-top").click(function () {
+    $("html, body").animate({
+        scrollTop: 0
+    }, 100);
+  });
 
 
 });
