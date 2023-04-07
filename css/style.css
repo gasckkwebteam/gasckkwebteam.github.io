@@ -560,7 +560,6 @@ footer .footer-wrap .copy-wright{
 /* Department pages style */
 
 .page-title{
-    background-image: url('../images/BCA/bca-back.jpg');
     height: 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -568,7 +567,10 @@ footer .footer-wrap .copy-wright{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
+}
+.page-title.bca{
+    background-image: url('../images/BCA/bca-back.jpg');
 }
 .page-title:before{
     content: "";
@@ -592,12 +594,13 @@ footer .footer-wrap .copy-wright{
 }
 .inner-page-holder .nav .nav-link{
     text-align: left;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 22px;
     font-weight: 400;
     font-family: 'Open Sans';
     color: #8B8B8B;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    width: 100%;
 }
 .inner-page-holder .nav .nav-link:last-child{
     margin-bottom: 0;
@@ -608,7 +611,7 @@ footer .footer-wrap .copy-wright{
     font-weight: 700;
     border-radius: 0 10px;
 }
-.inner-page-holder .accordion .accordion-item{
+/*.inner-page-holder .accordion .accordion-item{
     margin-bottom: 20px;
     border: 0;
 }
@@ -639,15 +642,20 @@ footer .footer-wrap .copy-wright{
     border: 1px solid #1B9990;
     border-top: 0;
     border-radius: 0px 0px 5px 5px;
+}*/
+.inner-page-holder .syllabus-holder{
+    border: 1px solid #1B9990;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
 }
-.inner-page-holder .accordion .accordion-item .accordion-body a{
+.inner-page-holder .syllabus-holder .semester-name{
     display: block;
     font-weight: 400;
     font-family: 'Open Sans';
     color: #363738;
     font-size: 18px;
     line-height: 24px;
-    padding-bottom: 12px;
 }
 .faculty-card{
     background-color: #fff;
@@ -746,5 +754,40 @@ footer .footer-wrap .copy-wright{
     height: 300px !important;
 }
 
-  
-  
+/* Committee Page */
+
+.page-title.committee{
+    background-image: url('../images/committe-image.jpeg');
+}
+/* .committees-button-holder{
+    max-height: 700px;
+    height: 100%;
+    display: block;
+    overflow: auto;
+} */
+.member-section .table thead tr th{
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'Open sans';
+    color: #1B9990;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    border: 0;
+}
+.member-section .table tbody tr td{
+    font-size: 17px;
+    line-height: 25px;
+    font-family: 'Open sans';
+    color: #363738;
+    font-weight: 500;
+    text-align: center;
+    border: 0;
+    font-style: italic;
+}
+.member-section .table-striped > tbody > tr:nth-of-type(odd){
+    background-color: #1B9990;
+}
+.member-section .table-striped > tbody > tr:nth-of-type(odd) > td{
+    color: #fff;
+}
