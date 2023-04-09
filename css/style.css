@@ -253,6 +253,7 @@ header .navbar .thirukural-section .thiruvalluvar-img img {
 
 header .navbar .logo-holder .college-name {
     font-weight: 700;
+    font-family: 'Roboto';
     font-size: 26px;
     line-height: 33px;
     color: #05897b;
