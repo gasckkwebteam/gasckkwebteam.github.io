@@ -267,7 +267,7 @@ header .navbar .thirukural-section .thiruvalluvar-img img {
 
 header .navbar .logo-holder .college-name {
     font-weight: 700;
-    font-family: 'Sherif, Fira-code';
+    font-family: 'Fira-code, Sherif';
     font-size: 26px;
     line-height: 33px;
     color: #05897b;
@@ -276,7 +276,7 @@ header .navbar .logo-holder .college-name {
 header .navbar .logo-holder .college-name .address {
     font-size: 16px;
     line-height: 20px;
-    font-family: 'Sherif, Fira-code';
+    font-family: 'Fira-code, Sherif';
     font-weight: 400;
     color: #05897b;
 }
