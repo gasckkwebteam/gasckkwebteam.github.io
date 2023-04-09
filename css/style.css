@@ -13,6 +13,13 @@
 }
 
 @font-face {
+    font-family: 'Fira-code';
+    src: url("../fonts/FiraCode-Medium.otf");
+    font-display: swap;
+    font-weight: 300;
+}
+
+@font-face {
     font-family: 'Roboto';
     src: url("../fonts/Roboto-Regular.ttf");
     font-display: swap;
@@ -260,7 +267,7 @@ header .navbar .thirukural-section .thiruvalluvar-img img {
 
 header .navbar .logo-holder .college-name {
     font-weight: 700;
-    font-family: 'Sherif';
+    font-family: 'Sherif, Fira-code';
     font-size: 26px;
     line-height: 33px;
     color: #05897b;
@@ -269,7 +276,7 @@ header .navbar .logo-holder .college-name {
 header .navbar .logo-holder .college-name .address {
     font-size: 16px;
     line-height: 20px;
-    font-family: 'Sherif';
+    font-family: 'Sherif, Fira-code';
     font-weight: 400;
     color: #05897b;
 }
