@@ -5,19 +5,20 @@
     font-weight: 300;
 }
 
-
 @font-face {
     font-family: 'Roboto';
     src: url("../fonts/Roboto-Regular.ttf");
     font-display: swap;
     font-weight: 400;
 }
+
 @font-face {
     font-family: 'Tamil';
     src: url("../fonts/Kavivanar-Regular.ttf");
     font-display: swap;
     font-weight: 400;
 }
+
 @font-face {
     font-family: 'Noto';
     src: url("../fonts/NotoSerifTamil-Italic.ttf");
@@ -245,7 +246,7 @@ header .navbar .government-logo {
 }
 
 header .navbar .government-logo img {
-    width: 100%;
+    width: 125%;
 }
 
 header .navbar .thirukural-section span.thirukural {
