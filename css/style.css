@@ -237,7 +237,7 @@ header .navbar .logo-holder .navbar-brand {
 }
 
 header .navbar .logo-holder .navbar-brand img {
-    width: 70px;
+    width: 100%;
 }
 
 header .navbar .government-logo {
