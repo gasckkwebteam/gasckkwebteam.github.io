@@ -237,7 +237,7 @@ header .navbar .logo-holder .navbar-brand {
 }
 
 header .navbar .logo-holder .navbar-brand img {
-    width: 100%;
+    width: 125%;
 }
 
 header .navbar .government-logo {
@@ -246,7 +246,7 @@ header .navbar .government-logo {
 }
 
 header .navbar .government-logo img {
-    width: 125%;
+    width: 100%;
 }
 
 header .navbar .thirukural-section span.thirukural {
