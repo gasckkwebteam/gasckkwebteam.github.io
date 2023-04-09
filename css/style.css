@@ -262,6 +262,7 @@ header .navbar .logo-holder .college-name {
 header .navbar .logo-holder .college-name .address {
     font-size: 16px;
     line-height: 20px;
+    font-family: 'Roboto';
     font-weight: 400;
     color: #05897b;
 }
