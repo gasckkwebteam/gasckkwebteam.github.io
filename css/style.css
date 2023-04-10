@@ -772,7 +772,8 @@ footer .footer-wrap .copy-wright {
 }
 
 .inner-page-holder .syllabus-holder .semester-name {
-    display: block;
+    /*display: block;*/
+    display: none;
     font-weight: 400;
     font-family: 'Open Sans';
     color: #363738;
