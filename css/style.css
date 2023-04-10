@@ -848,7 +848,7 @@ footer .footer-wrap .copy-wright {
     font-family: 'Open Sans';
 }
 
-.faculty-card .profile-button {
+.profile-button {
     display: inline-block;
     border: 2px solid #05897b;
     font-size: 14px;
@@ -863,7 +863,7 @@ footer .footer-wrap .copy-wright {
     white-space: nowrap;
 }
 
-.faculty-card .profile-button:before {
+.profile-button:before {
     content: "";
     position: absolute;
     top: 0;
@@ -875,14 +875,14 @@ footer .footer-wrap .copy-wright {
     background-color: #05897b;
 }
 
-.faculty-card .profile-button:hover {
+.profile-button:hover {
     color: #fff;
     background-color: #05897b;
     transition: 0.3s;
     z-index: 1;
 }
 
-.faculty-card .profile-button:hover:before {
+.profile-button:hover:before {
     width: 100%;
     transition: 0.3s;
     z-index: -1;
@@ -935,4 +935,104 @@ footer .footer-wrap .copy-wright {
 
 .member-section .table-striped>tbody>tr:nth-of-type(odd)>td {
     color: #fff;
+}
+
+
+/* Extension Activities */
+
+.extension-activities-holder .progrem-officer .officer-image {
+    flex: 0 0 220px;
+    width: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.extension-activities-holder .progrem-officer .officer-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.extension-activities-holder .progrem-officer .officer-info {
+    flex: 0 0 calc(100% - 220px);
+    width: calc(100% - 220px);
+    padding-left: 40px;
+}
+
+.extension-activities-holder .progrem-officer .officer-info span {
+    display: block;
+    font-family: 'Open Sans';
+}
+
+.extension-activities-holder .progrem-officer .officer-info span.title {
+    font-size: 20px;
+    line-height: 24px;
+    color: #05897b;
+    font-weight: 700;
+}
+
+.extension-activities-holder .progrem-officer .officer-info span.name {
+    font-size: 20px;
+    line-height: 24px;
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+.extension-activities-holder .progrem-officer .officer-info span.designation {
+    font-size: 14px;
+    line-height: 20px;
+    color: #05897b;
+    font-weight: 500;
+}
+
+.extension-activities-holder .progrem-officer .officer-info span.department {
+    font-size: 15px;
+    line-height: 20px;
+    color: #707070;
+    font-weight: 400;
+}
+
+.extension-activities-holder .activity-logo {
+    flex: 0 0 200px;
+    width: 220px;
+    height: 200px;
+}
+
+.extension-activities-holder .activity-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* Administration */
+
+.administration-holder .administrator-detail .administration-image-outer {
+    border: 5px solid #05897b;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.administration-holder .administrator-detail .administration-image-outer .administration-image-inner {
+    border: 1px solid #05897b;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.administration-holder .administrator-detail .info span {
+    display: block;
+    font-family: 'Open Sans';
+}
+
+.administration-holder .administrator-detail .info span.name {
+    font-size: 22px;
+    line-height: 24px;
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+.administration-holder .administrator-detail .info span.designation {
+    font-size: 16px;
+    line-height: 20px;
+    color: #05897b;
+    font-weight: 500;
 }
