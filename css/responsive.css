@@ -21,50 +21,40 @@
 }
 
 @media screen and (max-width:767px) {
-    /*.top-section-bar .top-sec-inner .info-holder .email-wrap{
-        border-right: 0;*/
-}
-
-header .navbar .logo-holder .navbar-brand {
-    flex: 0 0 60px;
-    width: 60px;
-    padding: 0;
-}
-
-header .navbar .logo-holder .college-name {
-    font-size: 22px;
-    line-height: 25px;
-}
-
-header .navbar .navbar-collapse .navbar-nav .nav-item:hover .sub-menu {
-    left: 0;
-    transform: translateX(0);
-    background-color: #fff;
-    border-radius: 10px;
-}
-
-header .navbar .navbar-collapse .navbar-nav .nav-item:hover .sub-menu li a {
-    color: #05897b;
-}
-
-header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu li:hover a {
-    background-color: #05897b;
-    color: #fff;
-}
-
-.image-slider .carousel {
-    height: auto;
-}
-
-.faculty-card .faculty-image {
-    flex: 0 0 100%;
-    width: 100%;
-}
-
-.faculty-card .faculty-detail {
-    flex: 0 0 100%;
-    width: 100%;
-}
-
-
+    .top-section-bar .top-sec-inner .info-holder .email-wrap {
+        border-right: 0;
+    }
+    header .navbar .logo-holder .navbar-brand {
+        flex: 0 0 60px;
+        width: 60px;
+        padding: 0;
+    }
+    header .navbar .logo-holder .college-name {
+        font-size: 22px;
+        line-height: 25px;
+    }
+    header .navbar .navbar-collapse .navbar-nav .nav-item:hover .sub-menu {
+        left: 0;
+        transform: translateX(0);
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    header .navbar .navbar-collapse .navbar-nav .nav-item:hover .sub-menu li a {
+        color: #05897b;
+    }
+    header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu li:hover a {
+        background-color: #05897b;
+        color: #fff;
+    }
+    .image-slider .carousel {
+        height: auto;
+    }
+    .faculty-card .faculty-image {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+    .faculty-card .faculty-detail {
+        flex: 0 0 100%;
+        width: 100%;
+    }
 }
