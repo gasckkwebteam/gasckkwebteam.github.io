@@ -269,12 +269,12 @@ header .navbar .thirukural-section .thiruvalluvar-img img {
 header .navbar .logo-holder .college-name {
     font-weight: 900;
     font-family: 'Tamil', 'Noto';
-    font-size: 26px;
+    font-size: 24px;
     color: #05897b;
 }
 
 header .navbar .logo-holder .college-name .address {
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Tamil', 'Noto';
     font-weight: 400;
     color: #05897b;
@@ -768,12 +768,12 @@ footer .footer-wrap .copy-wright {
     border: 1px solid #1B9990;
     border-radius: 5px;
     padding: 10px;
+    display: none;
     margin-bottom: 20px;
 }
 
 .inner-page-holder .syllabus-holder .semester-name {
-    /*display: block;*/
-    display: none;
+    display: block;
     font-weight: 400;
     font-family: 'Open Sans';
     color: #363738;
@@ -1036,4 +1036,38 @@ footer .footer-wrap .copy-wright {
     line-height: 20px;
     color: #05897b;
     font-weight: 500;
+}
+
+.calender-button {
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-family: 'Open sans';
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    border: none;
+    outline: none;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(110, 179, 150, 1) 100%);
+    color: #fff;
+    animation: horizontal-shaking 3s ease-in-out infinite;
+}
+
+@keyframes horizontal-shaking {
+    0% {
+        transform: translateX(0)
+    }
+    25% {
+        transform: translateX(5px)
+    }
+    50% {
+        transform: translateX(-5px)
+    }
+    75% {
+        transform: translateX(5px)
+    }
+    100% {
+        transform: translateX(0)
+    }
 }
