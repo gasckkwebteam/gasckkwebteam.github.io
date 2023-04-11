@@ -1054,6 +1054,11 @@ footer .footer-wrap .copy-wright {
     animation: horizontal-shaking 3s ease-in-out infinite;
 }
 
+.calender-button.admission-button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
 @keyframes horizontal-shaking {
     0% {
         transform: translateX(0)
