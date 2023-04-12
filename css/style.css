@@ -257,13 +257,13 @@ header .navbar .thirukural-section span.thirukural {
 }
 
 header .navbar .thirukural-section .thiruvalluvar-img {
-    flex: 0 0 70px;
-    width: 70px;
+    flex: 0 0 85px;
+    width: 85px;
 }
 
 header .navbar .thirukural-section .thiruvalluvar-img img {
-    flex: 0 0 70px;
-    width: 70px;
+    flex: 0 0 85px;
+    width: 85px;
 }
 
 header .navbar .logo-holder .college-name {
@@ -684,6 +684,10 @@ footer .footer-wrap .copy-wright {
 
 .page-title.maths {
     background-image: url('../images/maths/maths_back.jpg');
+}
+
+.page-title.bba {
+    background-image: url("../images/BBA/bba_background.png");
 }
 
 .page-title:before {
