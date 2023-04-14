@@ -503,17 +503,17 @@ body.mobile-nav-activated header .navbar .navbar-collapse .navbar-nav {
     font-style: italic;
 }
 
-.update-wrap .details {
+.details {
     padding: 10px 16px;
 }
 
-.update-wrap .details ul li {
+.details ul li {
     position: relative;
     padding-left: 30px;
     margin-bottom: 16px;
 }
 
-.update-wrap .details ul li:before {
+.details ul li:before {
     content: "\ea68";
     position: absolute;
     left: 0;
@@ -523,7 +523,7 @@ body.mobile-nav-activated header .navbar .navbar-collapse .navbar-nav {
     font-size: 18px;
 }
 
-.update-wrap .details ul li span {
+.details ul li span {
     font-size: 16px;
     line-height: 22px;
     color: #363738;
@@ -1090,6 +1090,11 @@ footer .footer-wrap .copy-wright {
     font-weight: 500;
 }
 
+.calender-button.admission-button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
 .calender-button {
     border-radius: 5px;
     padding: 6px 12px;
@@ -1101,57 +1106,52 @@ footer .footer-wrap .copy-wright {
     display: inline-block;
     border: none;
     outline: none;
-    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(110, 179, 150, 1) 100%);
+    /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(110,179,150,1) 100%); */
     color: #fff;
-    animation: horizontal-shaking 3s ease-in-out infinite;
-}
-
-.calender-button.admission-button {
-    padding: 10px 20px;
-    font-size: 16px;
+    animation: horizontal-shaking 2s ease-in-out infinite;
+    animation-play-state: running;
+    -webkit-animation: horizontal-shaking 2s ease-in-out infinite;
+    -webkit-animation-play-state: running;
 }
 
 @keyframes horizontal-shaking {
     0% {
-        transform: translateX(0)
+        transform: translateX(0);
+        background-color: #e1760b;
     }
     25% {
         transform: translateX(5px)
     }
     50% {
-        transform: translateX(-5px)
+        transform: translateX(-5px);
+        background-color: #0cf2db;
     }
     75% {
         transform: translateX(5px)
     }
     100% {
-        transform: translateX(0)
+        transform: translateX(0);
+        background-color: #e1760b;
     }
 }
-
-
-/* Animation*/
 
 @-webkit-keyframes horizontal-shaking {
     0% {
-        background-color: #60ce80;
+        transform: translateX(0);
+        background-color: #e1760b;
+    }
+    25% {
+        transform: translateX(5px)
     }
     50% {
-        background-color: #154360;
+        transform: translateX(-5px);
+        background-color: #0cf2db;
+    }
+    75% {
+        transform: translateX(5px)
     }
     100% {
-        background-color: #60ce80;
-    }
-}
-
-@keyframes horizontal-shaking {
-    0% {
-        background-color: #60ce80;
-    }
-    50% {
-        background-color: #154360;
-    }
-    100% {
-        background-color: #60ce80;
+        transform: translateX(0);
+        background-color: #e1760b;
     }
 }
