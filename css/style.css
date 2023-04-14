@@ -231,8 +231,8 @@ header {
 }
 
 header .navbar .logo-holder .navbar-brand {
-    flex: 0 0 120px;
-    width: 120px;
+    flex: 0 0 100px;
+    width: 100px;
     padding: 0;
 }
 
@@ -510,6 +510,7 @@ body.mobile-nav-activated header .navbar .navbar-collapse .navbar-nav {
 .details ul li {
     position: relative;
     padding-left: 30px;
+    font-family: 'Open Sans';
     margin-bottom: 16px;
 }
 
