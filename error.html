@@ -97,7 +97,7 @@
 <body>
     <div class="container">
         <h1 class="title">Coming Soon</h1>
-        <p class="subtitle">We are working on it</p>
+        <p class="subtitle">Page Under Construction 🔨</p>
         <p class="message">Until Stay tuned 😉</p>
     </div>
     <script>
@@ -110,10 +110,17 @@
         var backgroundIndex = 1;
 
         setInterval(function() {
-            backgroundIndex = 1 - backgroundIndex;
-            body.style.backgroundImage = `url(images/meme.jpg)`;
-            container.classList.toggle('hide');
-        }, 5450);
+            if (backgroundIndex === 1) {
+                body.style.backgroundImage = "url(images/meme.gif)";
+                setTimeout(function() {
+                    backgroundIndex = 2;
+                }, 3000);
+            } else {
+                body.style.backgroundImage = "url(images/meme1.gif)";
+                setTimeout(function() {
+                    backgroundIndex = 1;
+                }, 5000);
+            }});
     </script>
 </body>
 
