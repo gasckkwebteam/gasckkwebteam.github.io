@@ -41,14 +41,14 @@
         
         .subtitle {
             font-size: 28px;
-            color: #777;
+            color: #666;
             font-family: 'Roboto';
             margin-top: -10px;
         }
         
         .message {
             font-size: 22px;
-            color: #777;
+            color: #666;
             font-family: 'Roboto';
             margin-top: 20px;
         }
@@ -104,17 +104,19 @@
         document.addEventListener('DOMContentLoaded', function() {
             document.querySelector('.container').classList.add('show');
         });
-
+    
         var body = document.querySelector('body');
         var container = document.querySelector('.container');
-        var backgroundIndex = 1;
-
+        var backgrounds = ["url(images/meme.gif)", "url(images/meme1.gif)"]; 
+        var backgroundIndex = 0;
+    
         setInterval(function() {
-            backgroundIndex = 1 - backgroundIndex;
-            body.style.backgroundImage = `url(images/meme.jpg)`;
+            backgroundIndex = (backgroundIndex + 1) % backgrounds.length;
+            body.style.backgroundImage = backgrounds[backgroundIndex];
             container.classList.toggle('hide');
-        }, 5450);
+        }, 7000);
     </script>
+    
 </body>
 
 </html>
