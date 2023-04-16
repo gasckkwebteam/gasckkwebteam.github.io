@@ -738,6 +738,14 @@ footer .footer-wrap .copy-wright {
     background-image: url('../images/iew/exam.jpg');
 }
 
+.page-title.rrc {
+    background-image: url('../images/RRC/rrc_back.jpg');
+}
+
+.page-title.nss {
+    background-image: url('../images/NSS/nss_1.jpg');
+}
+
 .page-title:before {
     content: "";
     position: absolute;
