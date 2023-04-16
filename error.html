@@ -110,17 +110,10 @@
         var backgroundIndex = 1;
 
         setInterval(function() {
-            if (backgroundIndex === 1) {
-                body.style.backgroundImage = "url(images/meme.gif)";
-                setTimeout(function() {
-                    backgroundIndex = 2;
-                }, 3000);
-            } else {
-                body.style.backgroundImage = "url(images/meme1.gif)";
-                setTimeout(function() {
-                    backgroundIndex = 1;
-                }, 5000);
-            }});
+            backgroundIndex = 1 - backgroundIndex;
+            body.style.backgroundImage = `url(images/meme.jpg)`;
+            container.classList.toggle('hide');
+        }, 5450);
     </script>
 </body>
 
