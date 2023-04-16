@@ -746,6 +746,10 @@ footer .footer-wrap .copy-wright {
     background-image: url('../images/NSS/nss_1.jpg');
 }
 
+.page-title.admission {
+    background-image: url('../images/addmision/back.jpg');
+}
+
 .page-title:before {
     content: "";
     position: absolute;
