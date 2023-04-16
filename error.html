@@ -13,49 +13,48 @@
             backdrop-filter: blur(7px);
             display: flex;
             justify-content: center;
-            filter:brightness(1);
+            filter: brightness(1);
             filter: contrast(1);
             align-items: center;
             height: 100vh;
             margin: 0;
             font-family: 'Roboto', sans-serif;
         }
-
+        
         .container {
             text-align: center;
             background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
-            width:40%;
+            width: 40%;
             border-radius: 5px;
             transition: transform 1s ease;
             transform: translateY(100px);
         }
-
+        
         .title {
             font-size: 68px;
             font-weight: bold;
             color: #333;
-            font-family:'Zeyada',cursive;
+            font-family: 'Zeyada', cursive;
         }
-
+        
         .subtitle {
             font-size: 28px;
-            color: #666;
-            font-family:'Roboto';
+            color: #777;
+            font-family: 'Roboto';
             margin-top: -10px;
         }
-
+        
         .message {
             font-size: 22px;
-            color: #999;
-            font-family:'Roboto';
+            color: #777;
+            font-family: 'Roboto';
             margin-top: 20px;
         }
-
+        
         .container.show {
             transform: translateY(0);
         }
-
     </style>
 </head>
 
@@ -66,7 +65,7 @@
         <p class="message">Until Stay tuned 😉</p>
     </div>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             document.querySelector('.container').classList.add('show');
         });
 
@@ -74,12 +73,12 @@
         var container = document.querySelector('.container');
         var backgroundIndex = 1;
 
-        setInterval(function () {
-        backgroundIndex = 1 - backgroundIndex;
-        body.style.backgroundImage = `url(images/meme.jpg)`;
-        container.classList.toggle('hide');
-        body.classList.toggle('show');
-    }, 3100);
+        setInterval(function() {
+            backgroundIndex = 1 - backgroundIndex;
+            body.style.backgroundImage = `url(images/meme.jpg)`;
+            container.classList.toggle('hide');
+            body.classList.toggle('show');
+        }, 5450);
     </script>
 </body>
 
