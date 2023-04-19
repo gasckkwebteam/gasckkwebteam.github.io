@@ -222,10 +222,47 @@
 
                             <div class="tab-pane fade" id="PE-tab-gallery" role="tabpanel" aria-labelledby="v-pills-gallery" data-aos="fade-up" data-aos-delay="400">
                                 <h2 class="mb-3 under-line pb-3">Help & Support</h2>
-                                <span class="name mb-4"><b>Government Arts and Science College,<br> Palkulam, Kanyakumari - 629401</b><br></span>
-                                <span class="name mb-4">Near Rohini College, Main Road,<br> Palkulam,<br>
-                                    Anju Gramam (Post),<br> Kanyakumari District - 629 401,<br>
-                                    Tamilnadu, India. </span>
+                                <div>
+                                    
+                                        <form >
+                                            <div class=form-group">
+                                                <label for="Form-name">Name</label>
+                                                <input class="form-control" type="text" id="form-name" name="form-name" placeholder="Your Name" required>
+                                               
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="Form-phone">Phone</label>
+                                                <input class="form-control" type="tel" placeholder="Phone no" required>
+                                              </div>
+                                            <div class="form-group">
+                                              <label for="Form-emailAdress">Email Address</label>
+                                              <input type="email" class="form-control" id="Form-emailAdress" name="Form-emailAdress" placeholder="Email id" required>
+                                            </div>
+                                             <div class="form-group">
+                                                    <label for="Form-ContactPerson">Contact Person</label>
+                                                    <select class="form-control" id="Form-ContactPerson" required>
+                                                    <option value="" selected disabled hidden >Choose Your Contact Person</option>
+                                                    <option>Principal</option>
+                                                    <option>Bursar</option>
+                                                    <option>College Office</option>
+                                                    <option>Head of the Department</option>
+                                                   
+                                                    </select>
+                                                </div>
+                                            
+                                            <div class="form-group">
+                                              <label for="Form-message">Message</label>
+                                              <textarea class="form-control"  rows="3" id="form-message" name="form-message" placeholder="Write your message here..." required></textarea>
+                                            </div>
+                                            <br>
+                                            <button type="submit"  class="btn btn-primary" onclick="sendEmail()"> 
+                                            
+                                            Send</button>
+                                          </form>
+                                      
+
+
+                                </div>
                             </div>
                             <!--./tab-pane-->
 
@@ -267,7 +304,17 @@
         </div>
     </footer>
 
-
+    <script>
+        function sendEmail() {
+          var name = document.getElementById("Form-name").value;
+          var email = document.getElementById("Form-emailAdress").value;
+          var message = document.getElementById("Form-message").value;
+          var subject = "New message from " + name;
+          var body = "Name: " + name + "\nEmail: " + email + "\n\n" + message;
+          window.location.href = "mailto:gasckkhelpdesk@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        }
+     </script>
+     
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/slick.min.js"></script>
@@ -277,6 +324,9 @@
     <script src="js/waypoints.js"></script>
     <script src="js/counterup.js"></script>
     <script src="js/custom.js"></script>
+   
+        
+        
 </body>
 
 </html>
