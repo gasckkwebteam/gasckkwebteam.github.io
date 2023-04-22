@@ -1108,11 +1108,49 @@ footer .footer-wrap .copy-wright {
     font-size: 16px;
 }
 
+.collegecode-button {
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-family: 'Open sans';
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    border: none;
+    outline: none;
+    /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(110,179,150,1) 100%); */
+    color: #fff;
+    animation: horizontal-shaking 2s ease-in-out infinite;
+    animation-play-state: running;
+    -webkit-animation: horizontal-shaking 2s ease-in-out infinite;
+    -webkit-animation-play-state: running;
+}
+
 .calender-button {
     border-radius: 5px;
     padding: 6px 12px;
     font-family: 'Open sans';
-    font-weight: 700;
+    font-weight: 200;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    border: none;
+    outline: none;
+    /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(110,179,150,1) 100%); */
+    color: #fff;
+    animation: horizontal-shaking 2s ease-in-out infinite;
+    animation-play-state: running;
+    -webkit-animation: horizontal-shaking 2s ease-in-out infinite;
+    -webkit-animation-play-state: running;
+}
+
+.magazine-button {
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-family: 'Open sans';
+    font-weight: 200;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
@@ -1144,14 +1182,14 @@ footer .footer-wrap .copy-wright {
     }
     100% {
         transform: translateX(0);
-        background-color: #e1760b;
+        background-color: #0000FF;
     }
 }
 
 @-webkit-keyframes horizontal-shaking {
     0% {
         transform: translateX(0);
-        background-color: #e1760b;
+        background-color: #24e10b;
     }
     25% {
         transform: translateX(5px)
@@ -1165,6 +1203,6 @@ footer .footer-wrap .copy-wright {
     }
     100% {
         transform: translateX(0);
-        background-color: #e1760b;
+        background-color: #e10b39;
     }
 }
