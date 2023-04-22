@@ -339,7 +339,7 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu {
     left: 50%;
     transform: translateX(-50%);
     display: none;
-    padding: 5px 0px;
+    padding: 0px 0px 5px;
     z-index: 10;
     border-radius: 0 0 10px 10px;
     top: 100%;
@@ -361,7 +361,7 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu li a {
     display: block;
 }
 
-header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu li:hover a {
+header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu li a:hover {
     background-color: #fff;
     color: #05897b;
 }
@@ -369,6 +369,32 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu li:hover a {
 header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu li a.active {
     background-color: #fff;
     color: #05897b;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu li{
+    position: relative;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu li .sub-sub-menu{
+    background-color: #1B9990;
+    position: absolute;
+    width: 100%;
+    min-width: 220px;
+    left: 100%;
+    top: 0;
+    display: none;
+    padding: 0px 0px 5px;
+    z-index: 10;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu li:hover .sub-sub-menu{
+    display: block;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu li .sub-sub-menu li a{
+    display: block;
 }
 
 header .navbar .navbar-toggler {
