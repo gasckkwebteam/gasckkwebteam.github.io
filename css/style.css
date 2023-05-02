@@ -241,8 +241,8 @@ header .navbar .logo-holder .navbar-brand img {
 }
 
 header .navbar .government-logo {
-    flex: 0 0 70px;
-    width: 70px;
+    flex: 0 0 80px;
+    width: 80px;
 }
 
 header .navbar .government-logo img {
@@ -250,7 +250,7 @@ header .navbar .government-logo img {
 }
 
 header .navbar .thirukural-section span.thirukural {
-    font-size: 15px;
+    font-size: 16px;
     color: #05897b;
     font-family: 'Tamil', 'Noto';
     font-weight: 700;
@@ -269,14 +269,14 @@ header .navbar .thirukural-section .thiruvalluvar-img img {
 header .navbar .logo-holder .college-name {
     font-weight: 900;
     font-family: 'Tamil', 'Noto';
-    font-size: 24px;
+    font-size: 26px;
     color: #05897b;
 }
 
 header .navbar .logo-holder .college-name .address {
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Tamil', 'Noto';
-    font-weight: 400;
+    font-weight: 600;
     color: #05897b;
 }
 
@@ -371,11 +371,11 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu li a.active {
     color: #05897b;
 }
 
-header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu li{
+header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu li {
     position: relative;
 }
 
-header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu li .sub-sub-menu{
+header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu li .sub-sub-menu {
     background-color: #1B9990;
     position: absolute;
     width: 100%;
@@ -389,11 +389,11 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu li .sub-sub-menu
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 
-header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu li:hover .sub-sub-menu{
+header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu li:hover .sub-sub-menu {
     display: block;
 }
 
-header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu li .sub-sub-menu li a{
+header .navbar .navbar-collapse .navbar-nav .nav-item .sub-menu li .sub-sub-menu li a {
     display: block;
 }
 
