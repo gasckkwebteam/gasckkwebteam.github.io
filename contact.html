@@ -360,12 +360,15 @@
 
     <script>
         function sendEmail() {
-            var name = document.getElementById("Form-name").value;
+            var name = document.getElementById("form-name").value;
+            var phone = document.getElementById("form-phone").value;
             var email = document.getElementById("Form-emailAdress").value;
-            var message = document.getElementById("Form-message").value;
+            var contactPerson = document.getElementById("Form-ContactPerson").value;
+            var message = document.getElementById("form-message").value;
             var subject = "New message from " + name;
-            var body = "Name: " + name + "\nEmail: " + email + "\n\n" + message;
-            window.location.href = "mailto:gasckkhelpdesk@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+            var body = "Name: " + name + "\nPhone: " + phone + "\nEmail: " + email + "\nContact Person: " + contactPerson + "\n\n" + message;
+            var mailtoLink = "mailto:gasckkhelpdesk@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+            window.location.href = mailtoLink;
         }
     </script>
 
